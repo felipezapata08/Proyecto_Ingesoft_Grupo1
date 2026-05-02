@@ -249,3 +249,93 @@ Then el sistema muestra el estado "Aprobado"
 Given que el profesor accede al sistema  
 When consulta una electiva rechazada  
 Then el sistema muestra las observaciones registradas por el jefe de departamento
+
+
+## Información de Cursos
+
+# PETICIONES DE PABLO
+
+## HU-01: Plataforma centralizada de información de electivas
+
+*Título:* Plataforma centralizada de informacion  
+*Yo, como:* estudiante de la Universidad Icesi  
+*Quiero:* acceder a toda la informacion de las electivas en un solo sitio  
+*Para:* evitar el uso de plataformas externas confusas y mejorar la consulta de informacion academica.
+
+### Criterios de aceptación:
+
+*Scenario: Acceso centralizado a la informacion*  
+Given que el estudiante ingresa al sistema de electivas  
+When navega por la plataforma  
+Then el sistema muestra toda la informacion relevante de los cursos en un solo lugar  
+
+*Scenario: Reemplazo de sistemas confusos*  
+Given que el estudiante ha utilizado plataformas como Banner anteriormente  
+When accede a la nueva plataforma  
+Then el sistema presenta la informacion de forma clara, organizada y facil de entender  
+
+---
+
+## HU-02: Visualizacion de contenido adicional del curso
+
+*Título:* Contenido adicional del curso  
+*Yo, como:* estudiante de la Universidad Icesi  
+*Quiero:* ver contenido complementario como descripciones ampliadas o recursos visuales  
+*Para:* comprender mejor el curso antes de inscribirlo.
+
+### Criterios de aceptación:
+
+*Scenario: Contenido disponible*  
+Given que el estudiante consulta una electiva  
+When accede a la informacion del curso  
+Then el sistema muestra contenido adicional como descripciones ampliadas o recursos visuales  
+
+*Scenario: Contenido no disponible*  
+Given que el estudiante consulta una electiva  
+When no existe contenido adicional cargado  
+Then el sistema muestra un mensaje indicando que no hay material complementario disponible  
+
+---
+
+# PETICIONES DE ROBIN
+
+## HU-01: Estructura organizada de la información de electivas
+
+*Título:* Estructura organizada de electivas  
+*Yo, como:* estudiante de la Universidad Icesi  
+*Quiero:* visualizar la informacion de los cursos de manera estructurada  
+*Para:* entender facilmente los datos academicos.
+
+### Criterios de aceptación:
+
+*Scenario: Visualizacion estructurada*  
+Given que el estudiante accede a la informacion de una electiva  
+When visualiza los datos del curso  
+Then el sistema organiza la informacion en secciones claras como objetivos, contenido, profesor y departamento  
+
+*Scenario: Informacion organizada*  
+Given que el sistema contiene informacion del curso  
+When se muestra al estudiante  
+Then el sistema garantiza que la informacion esté organizada y sea facil de interpretar  
+
+---
+
+## HU-02: Consulta rápida de información académica
+
+*Título:* Consulta rapida de informacion  
+*Yo, como:* estudiante de la Universidad Icesi  
+*Quiero:* acceder rapidamente a la informacion relevante de una electiva  
+*Para:* tomar decisiones academicas de manera agil.
+
+### Criterios de aceptación:
+
+*Scenario: Consulta eficiente*  
+Given que el estudiante busca informacion de una electiva  
+When accede al curso  
+Then el sistema muestra la informacion principal sin necesidad de multiples pasos  
+
+*Scenario: Acceso optimizado*  
+Given que el estudiante intenta consultar una electiva  
+When el proceso puede ser complejo  
+Then el sistema optimiza el acceso para reducir la cantidad de pasos necesarios  
+
